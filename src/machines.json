@@ -1,0 +1,141 @@
+[
+  {
+    "id": 2,
+    "virtual": [
+      "Boris 2",
+      "Alagoas Motos",
+      "Alphaclin",
+      "Auto Premium Jeep"
+    ],
+    "app": [
+      "Boris 2",
+      "Alagoas Motos",
+      "Alphaclin",
+      "Auto Premium Jeep",
+      "Discar"
+    ],
+    "cpu": "i3 6100",
+    "memory": "7.7gb"
+  },
+  {
+    "id": 3,
+    "virtual": [
+      "Belfort",
+      "Pernabuco Motos",
+      "Mais VW",
+      "Auto Premium Jeep"
+    ],
+    "app": [
+      "Belfort",
+      "Pernabuco Motos",
+      "Mais VW",
+      "Auto Premium Jeep"
+    ],
+    "cpu": "i3 6100",
+    "memory": "7.7gb"
+  },
+  {
+    "id": 4,
+    "virtual": [
+      "Guarautos"
+    ],
+    "app": [
+      "Guarautos",
+      "Boris 1"
+    ],
+    "cpu": "i3 2100",
+    "memory": "7.7gb"
+  },
+  {
+    "id": 5,
+    "virtual": [
+      "Emvipol",
+      "Sallon",
+      "Osaka"
+    ],
+    "app": [
+      "Emvipol",
+      "Sallon",
+      "Osaka",
+      "Arituba",
+      "Show Kedson"
+    ],
+    "cpu": "i3 2100",
+    "memory": "8.0gb"
+  },
+  {
+    "id": 6,
+    "virtual": [
+      "Liga",
+      "Disvel"
+    ],
+    "app": [
+      "Liga",
+      "Disvel"
+    ],
+    "cpu": "Celeron J1800",
+    "memory": "3.8gb"
+  },
+  {
+    "id": 7,
+    "virtual": [
+      "Nacional Via Costeira",
+      "Nacional Prudente"
+    ],
+    "app": [
+      "Nacional Prudente"
+    ],
+    "cpu": "Celeron J1800",
+    "memory": "3.8gb"
+  },
+  {
+    "id": 8,
+    "virtual": [
+    ],
+    "app": [
+      "Discar VW"
+    ],
+    "cpu": "AMD ATHLON NEO X2",
+    "memory": "1.8gb"
+  },
+  {
+    "id": 9,
+    "virtual": [
+      "Lucilo Maranhão",
+      "Potiguar Honda",
+      "BR Motos",
+      "Nacional CE",
+      "Maple Bear"
+    ],
+    "app": [
+
+    ],
+    "cpu": "i3 41500",
+    "memory": "7.8gb"
+  },
+  {
+    "id": 10,
+    "virtual": [
+    ],
+    "app": [
+      "Arituba",
+      "Show Kedson"
+    ],
+    "cpu": "AMD A6-3670",
+    "memory": "7.8gb"
+  },
+  {
+    "id": 11,
+    "virtual": [],
+    "app": [
+      "Lucilo Maranhão",
+      "Potiguar Honda",
+      "BR Motos",
+      "Nacional CE",
+      "Nacional Prudente",
+      "Nacional Maple Bear"
+    ],
+    "cpu": "i3 6100",
+    "memory": "12.1gb"
+  }
+]

@@ -1,3 +1,3 @@
 export default {
-  ip: 'http://52.67.86.19:3050',
+  ip: 'http://localhost:3000',
 };
