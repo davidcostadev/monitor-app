@@ -29,6 +29,10 @@ export default class SocketMotor {
     this.socket.on('get_cpu', callback);
   }
 
+  getStatsClient(callback) {
+    this.socket.on('get_stats_client', callback);
+  }
+
   getMemory(callback) {
     this.socket.on('get_memory', callback);
   }

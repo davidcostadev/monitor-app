@@ -1,31 +1,34 @@
 <template>
 
-  <div v-for="machine in machineList">
-    <div class="block-slots">
-      <span v-for="virtual in machine.virtual" class="slot slot-virtual">{{virtual}}</span>
-      <span v-for="app in machine.app" class="slot slot-app">{{app}}</span>
-    </div>
+  <div>
 
-    <canvas :id="`host${machine.id}Cpu`" class="monitor"></canvas>
+    dashboard
 
-    <div class="block-info">
-      <div class="info-machine">Machine: {{machine.id}}</div>
-      <div class="info-virtual">Virtual: {{machine.virtual.length}}</div>
-      <div class="info-apps">Apps: {{machine.app.length}}</div>
-      <div class="info-cpu">CPU:{{machine.cpu}}</div>
-      <div id="info-memory">MEMORY{{machine.memory}}</div>
-      <div :id="`info-cpu-usage${machine.id}`">0%</div>
-      <div :id="`info-memory-usage${machine.id}`">0%</div>
-      <!--<div class="info-memory-usage">{{machineInfo[machine.id].memory}}</div>-->
-
-    </div>
   </div>
 
 </template>
 
 <script>
+  import SocketMotor from '../socket';
+  import config from '../config';
+
+  const Socket = new SocketMotor(config.ip);
+
   export default {
-    //
+    data() {
+      return {
+        // Socket
+      };
+    },
+    mounted() {
+      Socket.connect(() => {
+        window.console.log('connected');
+
+        Socket.getStatsClient((data) => {
+          window.console.log(data);
+        });
+      });
+    },
   };
 </script>
 

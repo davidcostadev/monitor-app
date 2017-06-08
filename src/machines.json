@@ -1,5 +1,16 @@
 [
   {
+    "id": 1,
+    "virtual": [
+      "David Teste"
+    ],
+    "app": [
+      "David Teste"
+    ],
+    "cpu": "i5 6100",
+    "memory": "8gb"
+  },
+  {
     "id": 2,
     "virtual": [
       "Boris 2",
