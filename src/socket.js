@@ -30,7 +30,7 @@ export default class SocketMotor {
   }
 
   getStatsClient(callback) {
-    this.socket.on('get_stats_client', callback);
+    this.socket.on('get_status', callback);
   }
 
   getMemory(callback) {
