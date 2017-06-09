@@ -34,13 +34,13 @@
       "Belfort",
       "Pernabuco Motos",
       "Mais VW",
-      "Auto Premium Jeep"
+      "Nacional BR"
     ],
     "app": [
       "Belfort",
       "Pernabuco Motos",
       "Mais VW",
-      "Auto Premium Jeep"
+      "Nacional BR"
     ],
     "cpu": "i3 6100",
     "memory": "7.7gb"
@@ -62,14 +62,14 @@
     "virtual": [
       "Emvipol",
       "Sallon",
-      "Osaka"
+      "Osaka",
+      "Arituba",
+      "Show Kedson"
     ],
     "app": [
       "Emvipol",
       "Sallon",
-      "Osaka",
-      "Arituba",
-      "Show Kedson"
+      "Osaka"
     ],
     "cpu": "i3 2100",
     "memory": "8.0gb"
