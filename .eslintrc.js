@@ -33,6 +33,7 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'guard-for-in': 'off',
     'no-console': 'off',
+    'no-param-reassign': 'off',
     // allow optionalDependencies
     'import/no-extraneous-dependencies': ['error', {
       'optionalDependencies': ['test/unit/index.js']

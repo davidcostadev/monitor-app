@@ -1,20 +1,15 @@
 <template>
 
   <div class="numbers">
-    <div v-for="number in numbers" v-bind:class="`card-number ${numbers_status[number.number]}`">
+    <div v-for="number in numbers" v-bind:class="`card-number ${numbers_status[number.number].status}`">
 
       <div class="card-number-content">
-        <div class="card-number-machine">
-          {{number.maquine}}
-        </div>
-        {{numbers_status[number.number]}}
+        <div class="card-number-machine">{{number.maquine}}</div>
+        {{numbers_status[number.number].status}}
+        <div class="card-number-time">{{numbers_status[number.number].time}}</div>
       </div>
-      <div class="card-number-name">
-        {{number.name}}
-      </div>
-      <div class="card-number-number">
-        {{number.number}}
-      </div>
+      <div class="card-number-name">{{number.name}}</div>
+      <div class="card-number-number">{{number.number}}</div>
     </div>
 
   </div>
@@ -25,6 +20,7 @@
   import SocketMotor from '../socket';
   import config from '../config';
   import numbers from '../numbers.json';
+  import { getHora } from '../helpers/Common';
 
   const Socket = new SocketMotor(config.ip);
 
@@ -40,7 +36,10 @@
         const status = {};
 
         this.numbers.forEach((number) => {
-          status[number.number] = 'off';
+          status[number.number] = {
+            status: 'off',
+            time: '-',
+          };
         });
 
 
@@ -59,7 +58,10 @@
         Socket.getStatsClient((data) => {
           const old = JSON.parse(JSON.stringify(this.number_status_socket));
 
-          old[data.number] = data.status;
+          old[data.number] = {
+            status: data.status,
+            time: getHora(data.time),
+          };
 
           this.number_status_socket = old;
           window.console.log(data);
@@ -102,6 +104,12 @@
   .card-number-machine {
     padding: 5px 15px;
     margin: -20px -15px 20px;
+    font-size: 12px;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .card-number-time {
+    padding: 5px 15px;
+    margin: 20px -15px -20px;
     font-size: 12px;
     background: rgba(0, 0, 0, 0.5);
   }

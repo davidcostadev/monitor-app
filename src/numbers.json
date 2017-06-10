@@ -1,10 +1,5 @@
 [
   {
-    "number" : 558499999999,
-    "maquine": 1,
-    "name" : "Teste David"
-  },
-  {
     "number" : 558185991286,
     "maquine": 2,
     "name" : "Boris Berenstein"
@@ -28,11 +23,6 @@
     "number" : 558494137500,
     "maquine": 2,
     "name" : "Instituto de Radiologia"
-  },
-  {
-    "number" : 557999784176,
-    "maquine": 2,
-    "name" : "DiscarVw"
   },
   {
     "number": 558591852600,
@@ -118,11 +108,6 @@
     "number" : 558496816000,
     "maquine": 11,
     "name" : "Potiguar Honda"
-  },
-  {
-    "number" : 558581411592,
-    "maquine": 11,
-    "name" : "Nacional CE"
   },
   {
     "number" : 558581411592,
