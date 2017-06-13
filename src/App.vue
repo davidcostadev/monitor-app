@@ -1,10 +1,11 @@
 <template>
   <div id="app">
     <div id="header">
-      <ul class="nav">
+      <ul v-if="this.$route.path !== '/'"class="nav">
         <li>
-          <router-link to="/"> Detalhes</router-link>
           <router-link to="/dashboard">Dashboard</router-link>
+          <router-link to="/details"> Desempenho</router-link>
+          <router-link to="/"> Sair</router-link>
         </li>
       </ul>
     </div>
@@ -16,6 +17,9 @@
 
   export default {
     name: 'app',
+    created() {
+      window.console.log(this.$route);
+    },
   };
 
 </script>
@@ -25,6 +29,7 @@
     background-color: #111111;
     color: #eeeeee;
     font-family: tahoma, arial, sans-serif;
+    margin: 0;
   }
   .monitor {
     width: 100%;
@@ -33,7 +38,23 @@
   h4 {
     margin-bottom: 1px;
   }
-
+  .nav {
+    background: #1f1f1f;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .nav a {
+    color: #ccc;
+    padding: 8px 12px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  .nav a.router-link-exact-active {
+    background: rgba(0, 0, 0, 0.3);
+  }
   .block-slots {
     font-size: 0px;
     margin: 5px 0 0;
