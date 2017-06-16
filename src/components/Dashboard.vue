@@ -6,8 +6,8 @@
 
         <div class="card-number-content">
           <div class="card-number-machine">{{number.maquine}}</div>
-          <div v-if="numbers_status[number.number].status === 'esperando'">ok</div>
-          <div v-else-if="numbers_status[number.number].status === 'ok'">move</div>
+          <div v-if="numbers_status[number.number].status === 'esperando'">on</div>
+          <div v-else-if="numbers_status[number.number].status === 'ok'">interacting</div>
           <div v-else>{{numbers_status[number.number].status}}</div>
 
           <div class="card-number-time">{{numbers_status[number.number].time}}</div>
@@ -50,7 +50,18 @@
 
         for (const number in this.number_status_socket) {
           let element = this.number_status_socket[number];
-          status[number] = element;
+
+          // if (status[number].status !== element.status) {
+          //   if (element.status === 'ok') {
+          //     status[number] = element;
+          //   } else {
+          status[number] = {
+            status: element.status,
+            time: element.time,
+            // time: status[number].time,
+          };
+          //   }
+          // }
         }
 
         return status;

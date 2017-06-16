@@ -67,9 +67,7 @@
     margin-bottom: 5px;
     margin-right: 5px;
   }
-  .slot+.slot {
 
-  }
   .slot-virtual {
     color: aqua;
   }
@@ -88,11 +86,13 @@
     padding: 8px;
   }
 
-  @media (max-width: 600px) {
+ /* @media (max-width: 600px) {
     .block-info {
-      /*flex-direction: column;*/
+      flex-direction: column;
     }
   }
+*/
+
 
 
 
